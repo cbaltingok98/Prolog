@@ -4,7 +4,7 @@ bifrost(A, B) :- travel_to(A, X), travel_to(X, B).
 walking(A, B) :- walk_to(A, B).                                                                 %try to walk from poin A to B
 walking(A, B) :- walk_to(A, X), walk_to(X, B).
 
-bifrostandwalk(A, B) :- walking(A, B).                                                          %try to find long distanced points. USE ADVANCED, THIS ALONE WONT WORK FOR ALL, ADVANCED WORKS FOR ALL.
+bifrostandwalk(A, B) :- walking(A, B).                                                          %try to find long distance points. USE ADVANCED, THIS ALONE WONT WORK FOR ALL, ADVANCED WORKS FOR ALL.
 bifrostandwalk(A, B) :- bifrost(A, X), walking(X, B).
 
 advancedbifrostandwalk(A, B) :- bifrostandwalk(A, B).                                           %tyr to go from a point in realm A to a point in realm B. use walk and bifrost.
@@ -25,7 +25,7 @@ bifrostandwalkanddiscover(A, B) :- advancedbifrostandwalk(A, X), discoverthetrut
 seecharacters(A, B) :- see(A, B).
 seecharacters(A, B) :- see(A, X), see(X, B).
 
-bifrostandwalkandseecharacters(A, B) :- seecharacters(A, B).                                    %try to see the characters from anywhere of the map to anywhere.
+bifrostandwalkandseecharacters(A, B) :- seecharacters(A, B).                                    %try to see the characters from any point of the map to any point.
 bifrostandwalkandseecharacters(A, B) :- advancedbifrostandwalk(A, X), seecharacters(X, B).
 
 
