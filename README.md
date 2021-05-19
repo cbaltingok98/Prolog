@@ -1,10 +1,10 @@
 # PATH FINDING 
 
 PLEASE LISTEN THIS WHEN REVIEWING -> [GOF4 Soundtrack](https://www.youtube.com/watch?v=rOmHpI0MMKE)
-God Of War 4 traveling between realms and different locations in realms.
+God Of War 4, traveling between realms and different locations in realms.
 Each location has different items to be claimed, lands to be walked on, truths to be discovered and characters to be seen.
 
-Realm names are considered as realms and the Bifrost. Bifrost is the "machine" that is used to travel between realms.
+Bifrost is the "machine" that is used to travel between realms.
 Each realm has different paths, items, discoveries and characters. It is possible to go from one point at a realm to another point at different realm if there is a path available.
 
 Map below shows the connections between realms, locations, items, dicoveries and their relationships. 
